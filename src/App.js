@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-// pages
+// 
+import Header from './components/Header'
 import Login from './components/Login'
 import Logout from './components/Logout'
 import User from './components/User'
@@ -16,13 +17,16 @@ class App extends Component {
       <div className="App">
         <AppProvider>
           <Router>
-            <Switch>
-              <Route path="/" exact component={Login} />
-              <Route path="/login" component={Login} />
-              <Route path="/logout" component={Logout} />
-              <Route path="/user/:username" component={User} />
-              <Route path="*" component={NotFound} />
-            </Switch>
+            <div>
+              <Header />
+              <Switch>
+                <Route path="/" exact component={Login} />
+                <Route path="/login" component={Login} />
+                <Route path="/logout" component={Logout} />
+                <Route path="/user/:username" component={User} />
+                <Route path="*" component={NotFound} />
+              </Switch>
+            </div>
           </Router>
         </AppProvider>
       </div>
