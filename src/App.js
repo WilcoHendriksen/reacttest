@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-// pages
+// components
 import Login from './components/Login'
 import Logout from './components/Logout'
 import User from './components/User'
