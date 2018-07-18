@@ -13,7 +13,7 @@ class Header extends Component {
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav">
-                            <li class="nav-item active">
+                            <li class="nav-item">
                                 <NavLink className="nav-link" exact to="/" activeClassName="active">Home</NavLink>
                             </li>
                             <li class="nav-item">
